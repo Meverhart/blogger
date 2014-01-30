@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
  end
 
  def create
-   @article = Article.new(article_params)
+   @article = Article.new(articles_params)
    @article.save
 
    flash.notice = "Article '#{@article.title}' Created!"
